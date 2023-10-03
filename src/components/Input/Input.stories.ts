@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Input from './Input';
 
 const meta = {
-  title: 'Form/Input',
+  title: 'form/Input',
   component: Input,
   parameters: {
     layout: 'centered',
@@ -24,6 +24,8 @@ export const Small: Story = {
     placeholder: 'Small Text',
   },
 };
+// override name
+Small.storyName = 'Small Input';
 
 export const Medium: Story = {
   args: {
